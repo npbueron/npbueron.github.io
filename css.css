@@ -1,0 +1,306 @@
+@import url(https://fonts.bunny.net/css);
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Carlito', sans-serif;
+	}
+	
+	a {
+		color: black;
+		font-family: 'Anaheim', sans-serif;
+		text-decoration: underline 2px #CB2045;
+		transition: 0.3s;
+	}
+	
+		a:visited {
+			color: black;
+		}
+		
+		a:hover {
+			color: #CB2045;
+		}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.header {
+		position: fixed;
+		width: 400px;
+		padding: 120px 60px;
+		text-align: center;
+	}
+	
+		.logo {
+			width: 150px;
+			height: 150px;
+			transition: 0.3s;
+		}
+		
+			.homelink:hover .logo {
+				transform: rotate(-6deg);
+			}
+		
+		.title {
+			margin: 0;
+			color: black;
+			font-size: 2em;
+			text-decoration: underline 2px #CB2045;
+			transition: 0.3s;
+		}
+		
+		
+			.title:visited {
+				color: black;
+			}
+			
+			.homelink:hover .title {
+				color: #CB2045;
+			}
+		
+		.links {
+			display: flex;
+			gap: 15px;
+			flex-direction: column;
+			margin: 50px 0 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		
+		.links a {
+			display: block;
+			margin: auto;
+			padding: 8px 0;
+			background: black;
+			width: 80%;
+			border-radius: 15px;
+			color: white;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+		
+			.links a:visited {
+				color: white;
+			}
+			
+			.links a:hover {
+				background: #CB2045;
+			}
+			
+		.socials {
+			display: flex;
+			gap: 30px;
+			justify-content: center;
+			align-items: center;
+			margin-top: 80px;
+			text-decoration: none;
+		}
+		
+			svg {
+				fill: grey;
+				transition: 0.3s;
+			}
+		
+			svg:hover {
+				fill: black;
+			}
+
+	.body {
+		padding: 40px 40px 100px 0;
+		margin-left: 400px;
+	}
+	
+		.page {
+			padding: 40px 200px 100px 50px;
+		}
+	
+		.text {
+			padding-left: 70px;
+			width: 60%;
+			line-height: 1.3;
+		}
+	
+		.projects {
+			display: flex;
+			gap: 40px 60px;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		
+			.project {
+				width: 450px;
+				text-decoration: none;
+				filter: grayscale(0.25);
+				transition: 0.3s;
+			}
+			
+				.projecttype, .projecttitle {
+					margin: 0;
+					color: black;
+				}
+			
+				.projecttype {
+					color: #747474;
+					text-transform: uppercase;
+					font-weight: normal;
+				}
+				
+				.projecttitle {
+					text-decoration: underline 3px #fff;
+					transition: 0.3s;
+				}
+				
+				.project:hover {
+					filter: grayscale(0);
+				}
+				
+					.project:hover .projecttitle {
+						text-decoration: underline 3px #CB2045;
+					}
+					
+				.projectprev {
+					width: 450px;
+					height: 337px;
+					border-radius: 6px;
+					object-fit: cover;
+				}
+	
+	.cover {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		text-align: center;
+		
+	}
+	
+		.page img {
+			border-radius: 6px;
+		}
+		
+		.previews {
+			margin-bottom: 1em;
+		}
+		
+		.projectlink {
+			display: inline-block;
+			margin: 10px 0 0;
+			padding: 8px 15px;
+			background: #CB2045;
+			border-radius: 15px;
+			color: white;
+			font-size: 1.25em;
+			text-decoration: none;
+		}
+		
+			.projectlink:visited {
+				color: white;
+			}
+			
+			.projectlink:hover {
+				color: white;
+				background: black;
+			}
+			
+		.last {
+			margin-bottom: 55px;
+		}
+		
+	video {
+		display: block;
+		margin: auto;
+	}
+				
+@media screen and (max-width: 1280px) {
+	.header {
+		width: 275px;
+		padding: 120px 40px;
+	}
+	
+		.socials {
+			margin-top: 20px;
+			transform: scale(0.6);
+		}
+	
+	.body {
+		margin-left: 275px;
+	}
+	
+		.projects {
+			gap: 30px 40px;
+		}
+	
+			.project {
+				width: 45%;
+			}
+			
+		.page {
+			padding; 40px 30px 100px 50px;
+		}
+		
+			.cover {
+				height: 200px;
+			}
+		
+			.text {
+				width: 100%;
+				padding-left: 0;
+			}
+			
+	video {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.project {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		position: static;
+		width: 100%;
+		padding: 40px 30px 20px;
+	}
+	
+		.logo {
+			width: 70px;
+			height: 70px;
+		}
+		
+		.links {
+			display: flex;
+			gap: 15px;
+			flex-direction: row;
+			justify-content: center;
+			margin: 20px 0 0;
+		}
+		
+			.links a {
+				width: 100%;
+				padding: 8px 15px;
+			}
+	
+	.body {
+		margin-left: 0;
+		padding: 10px 40px 100px;
+	}
+	
+	.projects {
+		justify-content: center;
+	}
+	
+	.project {
+		width: 95%;
+	}
+	
+		.cover {
+			height: 160px;
+		}
+}
