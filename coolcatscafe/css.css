@@ -123,7 +123,7 @@ img {
 		
 		.introbg {
 			flex: 65%;
-			background: center / cover url("/img/catfe/catfe/yerlin-matu-GtwiBmtJvaU-unsplash.jpg");
+			background: center / cover url("/img/catfe/yerlin-matu-GtwiBmtJvaU-unsplash.jpg");
 		}
 		
 		.button {
@@ -156,7 +156,7 @@ img {
 	
 		.menubg {
 			flex: 50%;
-			background: no-repeat center / contain url("/img/catfe/catfe/melanie-kreutz-cSzyY2UaFSI-unsplash.jpg");
+			background: no-repeat center / contain url("/img/catfe/melanie-kreutz-cSzyY2UaFSI-unsplash.jpg");
 		}
 		
 		.menutext {
@@ -216,7 +216,7 @@ img {
 		
 	.bgimage {
 		min-height: 450px;
-		background: no-repeat bottom / cover url("/img/catfe/catfe/leighann-blackwood-b8g-ywrrl5Y-unsplash.jpg");
+		background: no-repeat bottom / cover url("/img/catfe/leighann-blackwood-b8g-ywrrl5Y-unsplash.jpg");
 	}
 	
 	.menuimages {
@@ -237,7 +237,7 @@ img {
 		
 		.reservebg {
 			flex: 50%;
-			background: no-repeat bottom / cover url("/img/catfe/catfe/pexels-ezz7-979503.jpg");
+			background: no-repeat bottom / cover url("/img/catfe/pexels-ezz7-979503.jpg");
 		}
 		
 @media screen and (max-width: 860px) {
@@ -255,7 +255,7 @@ img {
 		}
 		
 	.intro {
-		min-height: 50vh;
+		min-height: 10vh;
 	}
 		
 	.introtext {
